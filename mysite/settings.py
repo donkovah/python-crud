@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls.apps.PollsConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -72,6 +74,20 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'pythoncrud',
+#         'USER': 'admin',
+#         'PASSWORD': 'password',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#         'TEST': {
+#             'NAME': 'pythoncrudtest',
+#         },
+#     }
+# }
 
 DATABASES = {
     'default': {
